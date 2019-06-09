@@ -46,6 +46,7 @@
     <Compile Include="Contenedores\Cliente.cs" />
     <Compile Include="Contenedores\OrdenCompra.cs" />
     <Compile Include="Contenedores\OrdenCompraDetalle.cs" />
+    <Compile Include="Enumerados\EstadoArticulo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

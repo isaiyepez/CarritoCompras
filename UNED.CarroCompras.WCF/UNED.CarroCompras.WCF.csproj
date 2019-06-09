@@ -21,6 +21,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -64,13 +65,14 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dominio\Especificaciones\Articulo.cs" />
+    <Compile Include="Dominio\Repositorios\Articulo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UNED\CarroCompras\WCF\Dominio\Repositorios.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Dominio\Acciones\" />
-    <Folder Include="Dominio\Especificaciones\" />
-    <Folder Include="Dominio\Repositorios\" />
     <Folder Include="Dominio\Validaciones\" />
     <Folder Include="Enumerados\" />
   </ItemGroup>
@@ -81,6 +83,12 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UNED.CarroCompras.Model\UNED.CarroCompras.Model.csproj">
+      <Project>{371023c2-73a0-49ff-89d0-91724be58f91}</Project>
+      <Name>UNED.CarroCompras.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
